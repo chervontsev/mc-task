@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+h1,
+h3,
+ul,
+li,
+input,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+button:focus,
+input:focus {
+  outline: none;
+}
