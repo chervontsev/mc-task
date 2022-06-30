@@ -20,7 +20,14 @@ export default defineComponent({
 </template>
 
 <style scoped>
-  .field-fetch input {}
+  .field-fetch {
+    display: flex;
+    width: 100%;
+  }
+
+  .field-fetch input {
+    flex: 1;
+  }
 
   .field-fetch button {}
 </style>

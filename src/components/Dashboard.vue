@@ -41,10 +41,10 @@ export default defineComponent({
 
 <template>
   <section class="dashboard">
-    <ul class="counters-list">
+    <ul class="counters-list container p-32">
       <li v-for="{ id, title, value } in output" :key="id">
         <vue3-autocounter
-          class="value"
+          class="value w-1-4"
           :ref="`counter-${id}`"
           :startAmount="0"
           :endAmount="value"
@@ -70,28 +70,30 @@ export default defineComponent({
 .counters-list {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  max-width: 800px;
-  height: 200px;
-  margin: auto;
+  justify-content: space-between;
+  height: 320px;
   color: white
 }
 
 .value {
   display: grid;
   place-content: center;
-  width: 100px;
-  height: 100px;
-  margin: 0 auto 20px;
+  width: 150px;
+  height: 150px;
+  margin: 32px auto;
+  box-shadow: 
+    -4px -4px 8px hsla(15, 50%, 90%, .35),
+    4px 4px 8px hsla(0, 0%, 0%, .35);
   border-radius: 50%;
   background-color: white;
+  font-size: 40px;
   color: darkblue;
 }
 
 .title {
   text-align: center;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
 }
 </style>

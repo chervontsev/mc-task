@@ -2,9 +2,11 @@
 </script>
 
 <template>
-  <div>
-    Stats guru
-  </div>
+  <header>
+    <div class="container p-32">
+      Stats guru
+    </div>
+  </header>
 </template>
 
 <style scoped>

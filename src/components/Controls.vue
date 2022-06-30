@@ -13,18 +13,28 @@ export default defineComponent({
 
 <template>
   <section class="controls">
-    <div class="params">
-      <FieldUpload />
-    </div>
+    <div class="container">
+      <div class="params w-2-4 p-32">
+        <FieldUpload />
+      </div>
 
-    <div class="params">
-      <FieldFetch />
+      <div class="params w-2-4 p-32">
+        <FieldFetch />
+      </div>
     </div>
   </section>
 </template>
 
 <style scoped>
-.controls {}
+.controls .container {
+  display: flex;
+}
 
-.params {}
+.params {
+  display: flex;
+}
+
+.params:not(:first-child) {
+  border-left: 1px solid lightgrey;
+}
 </style>

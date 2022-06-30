@@ -12,7 +12,7 @@ export default defineComponent({
 
 <template>
   <div class="field-upload">
-    <input type="file" ref="fileInput" />
+    <input v-show="false" type="file" ref="fileInput" />
     <button>
       Upload
     </button>
