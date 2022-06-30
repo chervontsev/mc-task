@@ -11,7 +11,8 @@
     "core-js": "^3.6.5",
     "mathjs": "10.6.4",
     "tslib": "2.0.3",
-    "vue": "^3.0.0"
+    "vue": "^3.0.0",
+    "vue3-autocounter": "1.0.6"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.4.0",

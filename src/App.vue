@@ -1,8 +1,8 @@
 <script lang="ts">
-import AppHeader from '@/components/AppHeader.vue';
-import Dashboard from '@/components/Dashboard.vue';
-import Controls from '@/components/Controls.vue';
-import { defineComponent } from 'vue';
+import { defineComponent } from "vue";
+import AppHeader from "@/components/AppHeader.vue";
+import Dashboard from "@/components/Dashboard.vue";
+import Controls from "@/components/Controls.vue";
 
 export default defineComponent({
   components: {

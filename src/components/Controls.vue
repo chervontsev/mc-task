@@ -1,7 +1,7 @@
 <script lang="ts">
-import { defineComponent } from 'vue';
-import FieldFetch from './FieldFetch.vue';
-import FieldUpload from './FieldUpload.vue';
+import { defineComponent } from "vue";
+import FieldFetch from "./FieldFetch.vue";
+import FieldUpload from "./FieldUpload.vue";
 
 export default defineComponent({
   components: {
