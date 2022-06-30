@@ -1,4 +1,5 @@
 body {
+  min-width: 720px;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -24,10 +25,11 @@ button {
   transition: background-color 0.15s ease-in-out;
 }
 
-button:hover {
+button:not(:disabled):hover {
   background-color: orangered;
 }
 
 button:disabled {
   opacity: 0.5;
+  cursor: default;
 }
