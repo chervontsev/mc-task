@@ -1,8 +1,10 @@
-<script setup lang="ts">
+<script lang="ts">
 </script>
 
 <template>
-  <div></div>
+  <div>
+    Stats guru
+  </div>
 </template>
 
 <style scoped>
