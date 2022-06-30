@@ -13,7 +13,7 @@ export default defineComponent({
 
 <template>
   <section class="controls">
-    <div class="container">
+    <div class="container py-32">
       <div class="params w-2-4 p-32">
         <FieldUpload />
       </div>

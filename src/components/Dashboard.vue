@@ -64,7 +64,7 @@ export default defineComponent({
 
 <style scoped>
 .dashboard {
-  background: linear-gradient(135deg, navy, darkblue);
+  background: linear-gradient(135deg, steelblue, darkblue);
 }
 
 .counters-list {

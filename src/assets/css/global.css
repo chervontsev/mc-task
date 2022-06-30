@@ -4,3 +4,30 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
 }
+
+button,
+input {
+  border-radius: 8px;
+  height: 32px;
+}
+
+input {
+  padding-inline: 16px;
+  border: 1px solid lightgray;
+}
+
+button {
+  padding-inline: 24px;
+  background-color: darkblue;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+}
+
+button:hover {
+  background-color: orangered;
+}
+
+button:disabled {
+  opacity: 0.5;
+}

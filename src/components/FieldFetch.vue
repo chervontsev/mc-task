@@ -12,7 +12,7 @@ export default defineComponent({
 
 <template>
   <div class="field-fetch">
-    <input type="text" v-model="url" />
+    <input type="text" v-model="url" placeholder="Paste URL" />
     <button>
       Fetch
     </button>
@@ -27,7 +27,10 @@ export default defineComponent({
 
   .field-fetch input {
     flex: 1;
+    border-radius: 8px 0 0 8px;
   }
 
-  .field-fetch button {}
+  .field-fetch button {
+    border-radius: 0 8px 8px 0;
+  }
 </style>
