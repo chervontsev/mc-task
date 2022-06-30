@@ -1,9 +1,3 @@
-:root {
-  --dark: darkblue;
-  --white: white;
-  --grey: lightgray;
-}
-
 body {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
