@@ -41,7 +41,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <div class="field-upload">
+  <div class="field-upload" @click="handlePickFile">
     <input 
       v-show="false" 
       type="file" 
@@ -49,12 +49,10 @@ export default defineComponent({
       accept="application/JSON"
       @change="handleFilePicked"
     />
-    <button @click="handlePickFile">
+    <input :value="fileName" :readonly="true" />
+    <button>
       Upload
     </button>
-    <div class="file-name">
-      {{ fileName }}
-    </div>
   </div>
 </template>
 
@@ -65,11 +63,16 @@ export default defineComponent({
   align-items: center;
 }
 
-.file-name {
+.field-upload input {
   flex: 1;
+  border-radius: 8px 0 0 8px;
   padding: 0 16px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+.field-upload button {
+  border-radius: 0 8px 8px 0;
 }
 </style>
