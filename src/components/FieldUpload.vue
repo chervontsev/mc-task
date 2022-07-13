@@ -49,7 +49,11 @@ export default defineComponent({
       accept="application/JSON"
       @change="handleFilePicked"
     />
-    <input :value="fileName" :readonly="true" />
+    <input 
+      :value="fileName" 
+      :readonly="true" 
+      placeholder="Pick a JSON file..."
+    />
     <button>
       Upload
     </button>
